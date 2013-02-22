@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <replace token="@hibernate.dialect@" file="/home/mohamad/github/tmp/aplikasi-sas/school-administration-config/target/classes/jdbc.properties" value="org.hibernate.dialect.MySQL5InnoDBDialect"/>
+  <replace token="@db.driver@" file="/home/mohamad/github/tmp/aplikasi-sas/school-administration-config/target/classes/jdbc.properties" value="com.mysql.jdbc.Driver"/>
+  <replace token="@db.url@" file="/home/mohamad/github/tmp/aplikasi-sas/school-administration-config/target/classes/jdbc.properties" value="jdbc:mysql://localhost/school-administration_development?characterEncoding=utf8&amp;zeroDateTimeBehavior=convertToNull"/>
+  <replace token="@db.username@" file="/home/mohamad/github/tmp/aplikasi-sas/school-administration-config/target/classes/jdbc.properties" value="root"/>
+  <replace token="@db.password@" file="/home/mohamad/github/tmp/aplikasi-sas/school-administration-config/target/classes/jdbc.properties" value="admin"/>
+</target>
+</project>

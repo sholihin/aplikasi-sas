@@ -1,0 +1,36 @@
+<div class="container">
+<div class="span11 well-large">
+    <h1 id="header">Majors Report</h1><br />
+	<form class="form-horizontal" name="formEdit">
+        <fieldset>
+		<div class="control-group" ng-class="{error: formEdit.majors_id.$invalid}">
+			<label class="control-label size" for="majors_id">Search by ID : &nbsp;</label>
+			<div class="input-append">
+			<input type="text" id="majors_id" name="majors_id" placeholder="ID" ng-model="currentMajors.value"required
+                        ui-validate="{MajorsValueAvailable: isMajorsValueAvailable}">
+                            <span ng-show="formEdit.majors_id.$error.majorsValueAvailable" class="help-inline">Data not Found</span>
+			<button class="btn btn-primary" type="button"><i class="icon-search"></i></button>
+</div>
+                </div>
+  </fieldset>
+</form>
+	       <table class="table table-striped table-condensed table-bordered">
+            <thead>
+                <tr>
+                    <th>Majors ID</th>
+                    <th>Name</th>
+                </tr>
+            </thead>
+        <tbody>
+            <tr ng-repeat="x in classes">
+                <td>{{x.majors_id}}</td>
+                <td>{{x.name}}</td>
+                <td>
+                    <a ng-click="edit(x)"><i class="icon-edit"></i></a>
+                    <a ng-click="remove(x)"><i class="icon-remove"></i></a>
+                </td>
+            </tr>
+        </tbody>
+        </table>
+		</div>
+</div>

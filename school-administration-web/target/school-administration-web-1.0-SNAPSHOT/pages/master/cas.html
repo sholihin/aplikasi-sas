@@ -1,0 +1,122 @@
+<div class="container">
+<div class="span11 well-large">
+	<h1 id="header">Master CAS</h1>
+	
+	<div>
+		<ul class="nav nav-tabs" id="myTab">
+			<li class="active"><a href="#list" data-toggle="tab"><i class="icon-list"></i>CAS List</a></li>
+			<li><a href="#new" data-toggle="tab"><i class="icon-plus-sign"></i>Create New CAS</a></li>
+		</ul>
+	<div class="tab-content">
+		<div class="tab-pane active" id="list">
+			<h3>CAS List</h3>
+			<table class="table table-striped table-condensed table-bordered">
+				<thead>
+					<tr>
+						<th>ID</th>
+						<th>Semester</th>
+						<th>Discipline</th>                
+						<th>Behavior</th>                
+						<th>Craft</th>
+						<th>Ill</th>
+						<th>Permit</th>
+						<th>Alpha</th>
+						<th>Note</th>
+						<th>Statement</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr ng-repeat="x in cass">
+						<td>{{x.id}}</td>
+						<td>{{x.semester}}</td>
+						<td>{{x.discipline}}</td>
+						<td>{{x.behavior}}</td>
+						<td>{{x.craft}}</td>
+						<td>{{x.ill}}</td>
+						<td>{{x.permit}}</td>
+						<td>{{x.alpha}}</td>
+						<td>{{x.note}}</td>
+						<td>{{x.statement}}</td>
+						<td>
+							<a ng-click="edit(x)"><i class="icon-edit"></i></a>
+							<a ng-click="remove(x)"><i class="icon-remove"></i></a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="tab-pane" id="new">
+  <h3>Input CAS</h3>
+	<form class="form-horizontal" name="formEdit">
+	<div class="control-group" ng-class="{error: formEdit.semester.$invalid}">
+					<label class="control-label" for="semester">Semester : &nbsp;</label>
+					<input type="text" id="semester" name="semester" placeholder="Semester" ng-model="currentPermission.value"required
+		ui-validate="{permissionValueAvailable: isPermissionValueAvailable}">
+					<span ng-show="formEdit.semester.$error.required" class="help-inline">required</span>
+					<span ng-show="formEdit.semester.$error.permissionValueAvailable" class="help-inline">Already exist</span>
+				</div>
+						<div class="control-group" ng-class="{error: formEdit.label.$invalid}">
+							<label class="control-label" for="tahun-ajaran">Discipline : &nbsp;</label>
+							<select>
+								<option>A</option>
+								<option>B</option>
+								<option>C</option>
+							</select>
+						</div>
+						<div class="control-group" ng-class="{error: formEdit.label.$invalid}">
+							<label class="control-label" for="tahun-ajaran">Behavior : &nbsp;</label>
+							<select>
+								<option>A</option>
+								<option>B</option>
+								<option>C</option>
+							</select>
+						</div>
+						<div class="control-group" ng-class="{error: formEdit.label.$invalid}">
+							<label class="control-label" for="tahun-ajaran">Craft : &nbsp;</label>
+							<select>
+								<option>A</option>
+								<option>B</option>
+								<option>C</option>
+							</select>
+						</div>
+				<div class="control-group" ng-class="{error: formEdit.ill.$invalid}">
+					<label class="control-label" for="ill">Ill : &nbsp;</label>
+					<input type="text" id="ill" name="ill" placeholder="Ill" ng-model="currentPermission.value"required
+		ui-validate="{permissionValueAvailable: isPermissionValueAvailable}">
+					<span ng-show="formEdit.ill.$error.required" class="help-inline">required</span>
+					<span ng-show="formEdit.ill.$error.permissionValueAvailable" class="help-inline">Already exist</span>
+				</div>
+		<div class="control-group" ng-class="{error: formEdit.permit.$invalid}">
+					<label class="control-label" for="permit">Permit : &nbsp;</label>
+					<input type="text" id="permit" name="permit" placeholder="Permit" ng-model="currentPermission.value"required
+ui-validate="{permissionValueAvailable: isPermissionValueAvailable}">
+            <span ng-show="formEdit.permit.$error.required" class="help-inline">required</span>
+            <span ng-show="formEdit.permit.$error.permissionValueAvailable" class="help-inline">Already exist</span>
+        </div>
+		<div class="control-group" ng-class="{error: formEdit.alpha.$invalid}">
+					<label class="control-label" for="alpha">Alpha : &nbsp;</label>
+					<input type="text" id="alpha" name="alpha" placeholder="Alpha" ng-model="currentPermission.value"required
+ui-validate="{permissionValueAvailable: isPermissionValueAvailable}">
+            <span ng-show="formEdit.alpha.$error.required" class="help-inline">required</span>
+            <span ng-show="formEdit.alpha.$error.permissionValueAvailable" class="help-inline">Already exist</span>
+        </div>
+				<div class="control-group" ng-class="{error: formEdit.note.$invalid}">
+					<label class="control-label" for="note">Note : &nbsp;</label>
+					<input type="text" id="note" name="note" placeholder="Note" ng-model="currentPermission.value"required
+ui-validate="{permissionValueAvailable: isPermissionValueAvailable}">
+        </div>
+		<div class="control-group" ng-class="{error: formEdit.statement.$invalid}">
+					<label class="control-label" for="statement">Statement : &nbsp;</label>
+					<input type="text" id="statement" name="tgllahir" placeholder="Statement" ng-model="currentPermission.value"required
+ui-validate="{permissionValueAvailable: isPermissionValueAvailable}">
+        </div>
+						<div class="form-actions">
+						<button type="submit" class="btn btn-primary" ng-click="simpan()" ng-disabled="isClean() || formEdit.$invalid">Save</button>
+						<button type="reset" class="btn" ng-click="baru()">Clear</button>
+						</div>
+					</form>
+  </div>
+</div>
+</div>
+</div>
+</div>

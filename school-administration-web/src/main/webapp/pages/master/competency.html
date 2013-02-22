@@ -1,0 +1,99 @@
+<div class="container">
+<div class="span11 well-large">
+    <h1 id="header">Master Competency</h1>
+        <div>
+            <ul class="nav nav-tabs">
+                <li class="active"><a href="#list" data-toggle="tab"><i class="icon-list"></i>Competency List</a></li>
+                <li><a href="#new" data-toggle="tab"><i class="icon-plus-sign"></i>Add New Competency           </a></li>
+            </ul>
+        <div class="tab-content">
+    <div class="tab-pane active" id="list">
+      <h3>Competency List</h3>
+        <table class="table table-striped table-condensed table-bordered">
+            <thead>
+                <tr>
+                    <th>Competency ID</th>
+                    <th>Lesson</th>
+                    <th>KKM</th>
+                    <th>Name</th>
+                    <th></th>
+                </tr>
+            </thead>
+        <tbody>
+            <tr ng-repeat="x in comp">
+                <td>{{x.comp_id}}</td>
+                <td>{{x.lesson}}</td>
+                <td>{{x.kkm}}</td>
+                <td>{{x.name}}</td>
+                <td>
+                    <a ng-click="edit(x)"><i class="icon-edit"></i></a>
+                    <a ng-click="remove(x)"><i class="icon-remove"></i></a>
+                </td>
+            </tr>
+        </tbody>
+        </table>
+    </div>
+  <div class="tab-pane" id="new">
+      <h3>Input Competency</h3>
+	 <form class="form-horizontal" name="formEdit">
+             <div class="control-group" ng-class="{error: formEdit.comp_id.$invalid}">
+                <label class="control-label" for="comp_id">Competency ID : &nbsp;</label>
+                <input type="text" 
+                       id="comp_id" 
+                       name="comp_id" 
+                       placeholder="Competency IDsss" 
+                       ng-model="currentComp_id.value"
+                       required
+                       ui-validate="{compValueAvailable: isCompValueAvailable}">
+                <span ng-show="formEdit.comp.$error.required" class="help-inline">required</span>   
+            </div>
+             <div class="control-group" ng-class="{error: formEdit.lesson.$invalid}">
+                <label class="control-label" for="lesson">Lesson : &nbsp;</label>
+                <input type="text" 
+                       id="lesson" 
+                       name="lesson" 
+                       placeholder="Lesson" 
+                       ng-model="currentLesson.value"
+                       required
+                       ui-validate="{lessonValueAvailable: isLessonValueAvailable}">
+                <span ng-show="formEdit.lesson.$error.required" class="help-inline">required</span>   
+            </div>
+             <div class="control-group" ng-class="{error: formEdit.kkm.$invalid}">
+                <label class="control-label" for="kkm">KKM : &nbsp;</label>
+                <input type="text" 
+                       id="kkm" 
+                       name="kkm" 
+                       placeholder="KKM" 
+                       ng-model="currentkkm.value"
+                       required
+                       ui-validate="{kkmValueAvailable: isKkmValueAvailable}">
+                <span ng-show="formEdit.kkm.$error.required" class="help-inline">required</span>   
+            </div>
+            <div class="control-group" ng-class="{error: formEdit.name.$invalid}">
+                <label class="control-label" for="name">Name : &nbsp;</label>
+                <input type="text" 
+                       id="name" 
+                       name="name" 
+                       placeholder="Name" 
+                       ng-model="currentName.value"
+                       required
+                       ui-validate="{nameValueAvailable: isNameValueAvailable}">
+                <span ng-show="formEdit.name.$error.required" class="help-inline">required</span>   
+            </div>
+            <div class="form-actions">
+                <button type="submit" class="btn btn-primary" ng-click="simpan()" ng-disabled="isClean() || formEdit.$invalid">Save</button>
+                <button type="button" class="btn" ng-click="baru()">Cancel</button>
+            </div>
+    </form>
+    </div>
+
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+	  })
+ </script>
+		</div>
+</div>
+

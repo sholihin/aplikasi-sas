@@ -1,0 +1,72 @@
+<div class="container">
+<div class="span11 well-large">
+    <h1 id="header">Master Competency Standards</h1>
+        <div>
+            <ul class="nav nav-tabs">
+                <li class="active"><a href="#list" data-toggle="tab"><i class="icon-list"></i>Competency Standards List</a></li>
+                <li><a href="#new" data-toggle="tab"><i class="icon-plus-sign"></i>Create New Competency Standards</a></li>
+            </ul>
+        <div class="tab-content active">
+    <div class="tab-pane active" id="list">
+      <h3>Competency Standards List</h3>
+        <table class="table table-striped table-condensed table-bordered">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th></th>
+                </tr>
+            </thead>
+        <tbody>
+            <tr ng-repeat="x in cs">
+                <td>{{x.cs_id}}</td>
+                <td>{{x.name}}</td>
+                <td>
+                    <a ng-click="edit(x)"><i class="icon-edit"></i></a>
+                    <a ng-click="remove(x)"><i class="icon-remove"></i></a>
+                </td>
+            </tr>
+        </tbody>
+        </table>
+    </div>
+  <div class="tab-pane" id="new">
+      <h3>Input Competency Standards</h3>
+	 <form class="form-horizontal" name="formEdit">
+                <div class="control-group" ng-class="{error: formEdit.cs_id.$invalid}">
+                <label class="control-label" for="cs_id">ID : &nbsp;</label>
+                <input type="text" id="cs_id"
+                       name="cs_id" 
+                       placeholder="ID" 
+                       ng-model="currentCs_id.value"
+                       required>
+                <span ng-show="formEdit.cs_id.$error.required" class="help-inline">required</span>
+                </div>
+            <div class="control-group" ng-class="{error: formEdit.name.$invalid}">
+                <label class="control-label" for="name">Name : &nbsp;</label>
+                <input type="text" 
+                       id="name" 
+                       name="name" 
+                       placeholder="Name" 
+                       ng-model="currentName.value"
+                       required
+                       ui-validate="{nameValueAvailable: isNameValueAvailable}">
+                <span ng-show="formEdit.name.$error.required" class="help-inline">required</span>   
+            </div>
+            <div class="form-actions">
+                <button type="submit" class="btn btn-primary" ng-click="simpan()" ng-disabled="isClean() || formEdit.$invalid">Save</button>
+                <button type="button" class="btn" ng-click="baru()">Cancel</button>
+            </div>
+    </form>
+    </div>
+
+            </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+	  })
+ </script>
+		</div>
+</div>
+

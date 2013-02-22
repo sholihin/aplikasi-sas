@@ -1,0 +1,88 @@
+<div class="container">
+    <div class="span11 well-large">
+        <h1>Master School</h1>
+        <div>
+            <ul class="nav nav-tabs">
+                <li class="active"><a href="#list" data-toggle="tab" class="active"><i class="icon-list"></i>School List</a></li>
+                <li><a href="#new_school" data-toggle="tab"><i class="icon-plus-sign"></i>Create New School</a></li>
+            </ul>
+
+            <div class="tab-content">
+                <div class="tab-pane active" id="list">
+                    <h3>School List</h3>
+                    <table class="table table-striped table-condensed table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Name</th>                
+                                <th>Address</th>
+                                <th>Subdistrict</th>
+                                <th>Phone</th>
+                                <th>Website</th>                
+                                <th>Email</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="x in schools.content">
+                                <td>{{x.name}}</td>
+                                <td>{{x.address}}</td>
+                                <td>{{x.subdistrict}}</td>
+                                <td>{{x.phone}}</td>
+                                <td>{{x.website}}</td>
+                                <td>{{x.email}}</td>
+                                <td>
+                                    <a ng-click="edit(x)"><i class="icon-edit"></i></a>
+                                    <a ng-click="remove(x)"><i class="icon-remove"></i></a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="tab-pane" id="new_school">
+                    <h3>Input Teacher</h3>
+                    <form class="form-horizontal" name="formEdit">
+                        <div class="control-group" ng-class="{error: formEdit.name.$invalid}">
+                            <label class="control-label" for="name">Name : &nbsp;</label>
+                            <input type="text" id="name" name="name" placeholder="Nama Sekolah" ng-model="currentSchool.name"required>
+                            <span ng-show="formEdit.name.$error.required" class="help-inline">required</span>
+                        </div>
+                        <div class="control-group" ng-class="{error: formEdit.address.$invalid}">
+                            <label class="control-label" for="address">Address : &nbsp;</label>
+                            <input type="text" id="address" name="address" placeholder="Alamat Sekolah" ng-model="currentSchool.address"required>
+                            <span ng-show="formEdit.address.$error.required" class="help-inline">required</span>
+                        </div>
+                        <div class="control-group" ng-class="{error: formEdit.subdistrict.$invalid}">
+                            <label class="control-label" for="subdistrict">Subdistrict : &nbsp;</label>
+                            <input type="text" id="subdistrict" name="subdistrict" placeholder="Kecamatan" ng-model="currentSchool.subdistrict"required>
+                            <span ng-show="formEdit.subdistrict.$error.required" class="help-inline">required</span>
+                        </div>
+                        <div class="control-group" ng-class="{error: formEdit.phone.$invalid}">
+                            <label class="control-label" for="phone">Phone : &nbsp;</label>
+                            <input type="text" id="phone" name="phone" placeholder="Nomor Telepon Sekolah" ng-model="currentSchool.phone"required>
+                            <span ng-show="formEdit.phone.$error.required" class="help-inline">required</span>
+                        </div>
+                        <div class="control-group" ng-class="{error: formEdit.website.$invalid}">
+                            <label class="control-label" for="website">Website : &nbsp;</label>
+                            <input type="text" id="website" name="website" placeholder="Website Sekolah" ng-model="currentSchool.website"required>
+                            <span ng-show="formEdit.website.$error.required" class="help-inline">required</span>
+                        </div>
+                        <div class="control-group" ng-class="{error: formEdit.email.$invalid}">
+                            <label class="control-label" for="email">Email : &nbsp;</label>
+                            <input type="text" id="email" name="email" placeholder="Email Sekolah" ng-model="currentSchool.email"required>
+                        </div>
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary" ng-click="simpan()">Save</button>
+                            <button type="button" class="btn" ng-click="baru()" id="new_teacher">Cancel</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <script>
+                $(function () {
+                    $('#myTab a:last').tab('show');
+                })
+            </script>
+        </div>
+    </div>
+</div>

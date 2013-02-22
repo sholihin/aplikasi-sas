@@ -1,0 +1,52 @@
+<div class="container">
+<div class="span11 well-large">
+	<h1 id="header">Report CAS</h1><br />
+	<form class="form-horizontal" name="formEdit">
+  <fieldset>
+		<div class="control-group" ng-class="{error: formEdit.id.$invalid}">
+					<label class="control-label size" for="id">Search by ID  : &nbsp;</label>
+					<div class="input-append">
+					<input type="text" id="id" name="id" placeholder="ID" ng-model="currentPermission.value"required
+ui-validate="{permissionValueAvailable: isPermissionValueAvailable}">
+            <span ng-show="formEdit.id.$error.permissionValueAvailable" class="help-inline">Data not Found</span>
+			<button class="btn btn-primary" type="button"><i class="icon-search"></i></button>
+</div>
+        </div>
+  </fieldset>
+</form>
+			<table class="table table-striped table-condensed table-bordered">
+				<thead>
+					<tr>
+						<th>ID</th>
+						<th>Semester</th>            
+						<th>Discipline</th>
+						<th>Behavior</th>
+						<th>Craft</th>
+						<th>Ill</th>
+						<th>Permit</th>	
+						<th>Alpha</th>
+						<th>Note</th>
+						<th>Statement</th>	
+					</tr>
+				</thead>
+				<tbody>
+					<tr ng-repeat="x in students">
+						<td>{{x.id}}</td>
+						<td>{{x.semester}}</td>
+						<td>{{x.discipline}}</td>
+						<td>{{x.behavior}}</td>
+						<td>{{x.craft}}</td>
+						<td>{{x.ill}}</td>
+						<td>{{x.permit}}</td>
+						<td>{{x.alpha}}</td>
+						<td>{{x.note}}</td>
+						<td>{{x.statement}}</td>
+						<td>
+							<a ng-click="edit(x)"><i class="icon-edit"></i></a>
+							<a ng-click="remove(x)"><i class="icon-remove"></i></a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+</div>

@@ -1,0 +1,465 @@
+2013-02-22 16:20:50,825 INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization started 
+2013-02-22 16:20:50,910 INFO  o.s.w.c.s.XmlWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Fri Feb 22 16:20:50 WIT 2013]; root of context hierarchy 
+2013-02-22 16:20:50,963 INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [net/bull/javamelody/monitoring-spring.xml] 
+2013-02-22 16:20:51,033 INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from URL [jar:file:/home/mohamad/github/tmp/aplikasi-sas/school-administration-service/target/school-administration-service-1.0-SNAPSHOT.jar!/com/artivisi/school/administration/service/impl/applicationContext.xml] 
+2013-02-22 16:20:51,185 INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from URL [jar:file:/home/mohamad/github/tmp/aplikasi-sas/school-administration-config/target/school-administration-config-1.0-SNAPSHOT.jar!/com/artivisi/school/administration/applicationContext.xml] 
+2013-02-22 16:20:51,240 INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-security.xml] 
+2013-02-22 16:20:51,287 INFO  o.s.s.c.SpringSecurityCoreVersion - You are running with Spring Security Core 3.1.3.RELEASE 
+2013-02-22 16:20:51,288 INFO  o.s.s.c.SecurityNamespaceHandler - Spring Security 'config' module version is 3.1.3.RELEASE 
+2013-02-22 16:20:51,351 INFO  o.s.s.c.h.HttpSecurityBeanDefinitionParser - Checking sorted filter chain: [Root bean: class [org.springframework.security.web.context.SecurityContextPersistenceFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 200, Root bean: class [org.springframework.security.web.session.ConcurrentSessionFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 300, Root bean: class [org.springframework.security.web.authentication.logout.LogoutFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 400, <org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter#0>, order = 800, Root bean: class [org.springframework.security.web.savedrequest.RequestCacheAwareFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1300, Root bean: class [org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1400, Root bean: class [org.springframework.security.web.authentication.AnonymousAuthenticationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1700, Root bean: class [org.springframework.security.web.session.SessionManagementFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1800, Root bean: class [org.springframework.security.web.access.ExceptionTranslationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1900, <org.springframework.security.web.access.intercept.FilterSecurityInterceptor#0>, order = 2000] 
+2013-02-22 16:20:51,545 WARN  Spring Security Debugger - 
+
+********************************************************************
+**********        Security debugging is enabled.       *************
+**********    This may include sensitive information.  *************
+**********      Do not use in a production system!     *************
+********************************************************************
+
+ 
+2013-02-22 16:20:51,619 INFO  o.s.c.s.PropertySourcesPlaceholderConfigurer - Loading properties file from URL [jar:file:/home/mohamad/github/tmp/aplikasi-sas/school-administration-config/target/school-administration-config-1.0-SNAPSHOT.jar!/jdbc.properties] 
+2013-02-22 16:20:51,859 INFO  o.s.w.c.s.XmlWebApplicationContext - Bean 'dataSource' of type [class org.apache.commons.dbcp.BasicDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2013-02-22 16:20:51,930 INFO  o.s.w.c.s.XmlWebApplicationContext - Bean 'org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter#9a25c5' of type [class org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2013-02-22 16:20:51,973 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default' 
+2013-02-22 16:20:52,079 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@1fcfd14 
+2013-02-22 16:20:52,079 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@1fcfd14 
+2013-02-22 16:20:52,080 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@1fcfd14 
+2013-02-22 16:20:52,080 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@1fcfd14 
+2013-02-22 16:20:52,080 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@1fcfd14 
+2013-02-22 16:20:52,080 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@1fcfd14 
+2013-02-22 16:20:52,082 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@195d79a 
+2013-02-22 16:20:52,082 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@195d79a 
+2013-02-22 16:20:52,085 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration true_false -> org.hibernate.type.TrueFalseType@b30577 
+2013-02-22 16:20:52,085 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration true_false -> org.hibernate.type.TrueFalseType@b30577 
+2013-02-22 16:20:52,087 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration yes_no -> org.hibernate.type.YesNoType@1c89f29 
+2013-02-22 16:20:52,087 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration yes_no -> org.hibernate.type.YesNoType@1c89f29 
+2013-02-22 16:20:52,090 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@573789 
+2013-02-22 16:20:52,090 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@573789 
+2013-02-22 16:20:52,091 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@573789 
+2013-02-22 16:20:52,091 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@573789 
+2013-02-22 16:20:52,091 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@573789 
+2013-02-22 16:20:52,091 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@573789 
+2013-02-22 16:20:52,093 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration character -> org.hibernate.type.CharacterType@1a7b5f8 
+2013-02-22 16:20:52,093 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration character -> org.hibernate.type.CharacterType@1a7b5f8 
+2013-02-22 16:20:52,094 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration char -> org.hibernate.type.CharacterType@1a7b5f8 
+2013-02-22 16:20:52,094 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration char -> org.hibernate.type.CharacterType@1a7b5f8 
+2013-02-22 16:20:52,094 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@1a7b5f8 
+2013-02-22 16:20:52,094 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@1a7b5f8 
+2013-02-22 16:20:52,097 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@1e630ca 
+2013-02-22 16:20:52,097 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@1e630ca 
+2013-02-22 16:20:52,098 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@1e630ca 
+2013-02-22 16:20:52,098 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@1e630ca 
+2013-02-22 16:20:52,098 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@1e630ca 
+2013-02-22 16:20:52,098 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@1e630ca 
+2013-02-22 16:20:52,101 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration integer -> org.hibernate.type.IntegerType@e56ccf 
+2013-02-22 16:20:52,101 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration integer -> org.hibernate.type.IntegerType@e56ccf 
+2013-02-22 16:20:52,102 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration int -> org.hibernate.type.IntegerType@e56ccf 
+2013-02-22 16:20:52,102 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration int -> org.hibernate.type.IntegerType@e56ccf 
+2013-02-22 16:20:52,102 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@e56ccf 
+2013-02-22 16:20:52,102 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@e56ccf 
+2013-02-22 16:20:52,106 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@19df2e 
+2013-02-22 16:20:52,106 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@19df2e 
+2013-02-22 16:20:52,106 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@19df2e 
+2013-02-22 16:20:52,106 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@19df2e 
+2013-02-22 16:20:52,107 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Long -> org.hibernate.type.LongType@19df2e 
+2013-02-22 16:20:52,107 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Long -> org.hibernate.type.LongType@19df2e 
+2013-02-22 16:20:52,109 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@1cfba42 
+2013-02-22 16:20:52,109 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@1cfba42 
+2013-02-22 16:20:52,110 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@1cfba42 
+2013-02-22 16:20:52,110 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@1cfba42 
+2013-02-22 16:20:52,110 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@1cfba42 
+2013-02-22 16:20:52,110 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@1cfba42 
+2013-02-22 16:20:52,112 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@1a58e00 
+2013-02-22 16:20:52,112 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@1a58e00 
+2013-02-22 16:20:52,115 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@1a58e00 
+2013-02-22 16:20:52,115 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@1a58e00 
+2013-02-22 16:20:52,116 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@1a58e00 
+2013-02-22 16:20:52,116 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@1a58e00 
+2013-02-22 16:20:52,121 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@8bdc9 
+2013-02-22 16:20:52,121 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@8bdc9 
+2013-02-22 16:20:52,121 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@8bdc9 
+2013-02-22 16:20:52,121 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@8bdc9 
+2013-02-22 16:20:52,123 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@126b724 
+2013-02-22 16:20:52,123 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@126b724 
+2013-02-22 16:20:52,124 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@126b724 
+2013-02-22 16:20:52,124 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@126b724 
+2013-02-22 16:20:52,126 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration string -> org.hibernate.type.StringType@15d0123 
+2013-02-22 16:20:52,126 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration string -> org.hibernate.type.StringType@15d0123 
+2013-02-22 16:20:52,126 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.String -> org.hibernate.type.StringType@15d0123 
+2013-02-22 16:20:52,126 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.String -> org.hibernate.type.StringType@15d0123 
+2013-02-22 16:20:52,128 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration url -> org.hibernate.type.UrlType@16bc6a7 
+2013-02-22 16:20:52,128 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration url -> org.hibernate.type.UrlType@16bc6a7 
+2013-02-22 16:20:52,129 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.net.URL -> org.hibernate.type.UrlType@16bc6a7 
+2013-02-22 16:20:52,129 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.net.URL -> org.hibernate.type.UrlType@16bc6a7 
+2013-02-22 16:20:52,131 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration date -> org.hibernate.type.DateType@1df04b 
+2013-02-22 16:20:52,131 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration date -> org.hibernate.type.DateType@1df04b 
+2013-02-22 16:20:52,132 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Date -> org.hibernate.type.DateType@1df04b 
+2013-02-22 16:20:52,132 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Date -> org.hibernate.type.DateType@1df04b 
+2013-02-22 16:20:52,134 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration time -> org.hibernate.type.TimeType@747708 
+2013-02-22 16:20:52,134 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration time -> org.hibernate.type.TimeType@747708 
+2013-02-22 16:20:52,135 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@747708 
+2013-02-22 16:20:52,135 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@747708 
+2013-02-22 16:20:52,137 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration timestamp -> org.hibernate.type.TimestampType@8503ce 
+2013-02-22 16:20:52,137 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration timestamp -> org.hibernate.type.TimestampType@8503ce 
+2013-02-22 16:20:52,138 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@8503ce 
+2013-02-22 16:20:52,138 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@8503ce 
+2013-02-22 16:20:52,138 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@8503ce 
+2013-02-22 16:20:52,138 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@8503ce 
+2013-02-22 16:20:52,140 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@fd2b91 
+2013-02-22 16:20:52,140 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@fd2b91 
+2013-02-22 16:20:52,142 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration calendar -> org.hibernate.type.CalendarType@54cf52 
+2013-02-22 16:20:52,142 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration calendar -> org.hibernate.type.CalendarType@54cf52 
+2013-02-22 16:20:52,143 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@54cf52 
+2013-02-22 16:20:52,143 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@54cf52 
+2013-02-22 16:20:52,143 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@54cf52 
+2013-02-22 16:20:52,143 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@54cf52 
+2013-02-22 16:20:52,144 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@18b070c 
+2013-02-22 16:20:52,144 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@18b070c 
+2013-02-22 16:20:52,146 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration locale -> org.hibernate.type.LocaleType@1200a63 
+2013-02-22 16:20:52,146 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration locale -> org.hibernate.type.LocaleType@1200a63 
+2013-02-22 16:20:52,146 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@1200a63 
+2013-02-22 16:20:52,146 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@1200a63 
+2013-02-22 16:20:52,148 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration currency -> org.hibernate.type.CurrencyType@8e1d84 
+2013-02-22 16:20:52,148 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration currency -> org.hibernate.type.CurrencyType@8e1d84 
+2013-02-22 16:20:52,148 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@8e1d84 
+2013-02-22 16:20:52,148 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@8e1d84 
+2013-02-22 16:20:52,150 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration timezone -> org.hibernate.type.TimeZoneType@1ce21dc 
+2013-02-22 16:20:52,150 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration timezone -> org.hibernate.type.TimeZoneType@1ce21dc 
+2013-02-22 16:20:52,150 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@1ce21dc 
+2013-02-22 16:20:52,150 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@1ce21dc 
+2013-02-22 16:20:52,152 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration class -> org.hibernate.type.ClassType@4df262 
+2013-02-22 16:20:52,152 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration class -> org.hibernate.type.ClassType@4df262 
+2013-02-22 16:20:52,152 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@4df262 
+2013-02-22 16:20:52,152 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@4df262 
+2013-02-22 16:20:52,154 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@49e681 
+2013-02-22 16:20:52,154 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@49e681 
+2013-02-22 16:20:52,154 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@49e681 
+2013-02-22 16:20:52,154 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@49e681 
+2013-02-22 16:20:52,155 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@69e7e7 
+2013-02-22 16:20:52,155 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@69e7e7 
+2013-02-22 16:20:52,157 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration pg-uuid -> org.hibernate.type.PostgresUUIDType@1c41091 
+2013-02-22 16:20:52,157 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration pg-uuid -> org.hibernate.type.PostgresUUIDType@1c41091 
+2013-02-22 16:20:52,159 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration binary -> org.hibernate.type.BinaryType@123b987 
+2013-02-22 16:20:52,159 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration binary -> org.hibernate.type.BinaryType@123b987 
+2013-02-22 16:20:52,160 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration byte[] -> org.hibernate.type.BinaryType@123b987 
+2013-02-22 16:20:52,160 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration byte[] -> org.hibernate.type.BinaryType@123b987 
+2013-02-22 16:20:52,160 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration [B -> org.hibernate.type.BinaryType@123b987 
+2013-02-22 16:20:52,160 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration [B -> org.hibernate.type.BinaryType@123b987 
+2013-02-22 16:20:52,162 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@798f1e 
+2013-02-22 16:20:52,162 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@798f1e 
+2013-02-22 16:20:52,162 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@798f1e 
+2013-02-22 16:20:52,162 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@798f1e 
+2013-02-22 16:20:52,162 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@798f1e 
+2013-02-22 16:20:52,162 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@798f1e 
+2013-02-22 16:20:52,164 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration image -> org.hibernate.type.ImageType@1b7f440 
+2013-02-22 16:20:52,164 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration image -> org.hibernate.type.ImageType@1b7f440 
+2013-02-22 16:20:52,165 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration characters -> org.hibernate.type.CharArrayType@119830d 
+2013-02-22 16:20:52,165 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration characters -> org.hibernate.type.CharArrayType@119830d 
+2013-02-22 16:20:52,166 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration char[] -> org.hibernate.type.CharArrayType@119830d 
+2013-02-22 16:20:52,166 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration char[] -> org.hibernate.type.CharArrayType@119830d 
+2013-02-22 16:20:52,166 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration [C -> org.hibernate.type.CharArrayType@119830d 
+2013-02-22 16:20:52,166 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration [C -> org.hibernate.type.CharArrayType@119830d 
+2013-02-22 16:20:52,168 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@766465 
+2013-02-22 16:20:52,168 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@766465 
+2013-02-22 16:20:52,168 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@766465 
+2013-02-22 16:20:52,168 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@766465 
+2013-02-22 16:20:52,168 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@766465 
+2013-02-22 16:20:52,168 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@766465 
+2013-02-22 16:20:52,170 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration text -> org.hibernate.type.TextType@19a3dd1 
+2013-02-22 16:20:52,170 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration text -> org.hibernate.type.TextType@19a3dd1 
+2013-02-22 16:20:52,177 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration blob -> org.hibernate.type.BlobType@88052c 
+2013-02-22 16:20:52,177 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration blob -> org.hibernate.type.BlobType@88052c 
+2013-02-22 16:20:52,178 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@88052c 
+2013-02-22 16:20:52,178 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@88052c 
+2013-02-22 16:20:52,179 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@d58325 
+2013-02-22 16:20:52,179 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@d58325 
+2013-02-22 16:20:52,184 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration clob -> org.hibernate.type.ClobType@efeb2e 
+2013-02-22 16:20:52,184 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration clob -> org.hibernate.type.ClobType@efeb2e 
+2013-02-22 16:20:52,184 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@efeb2e 
+2013-02-22 16:20:52,184 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@efeb2e 
+2013-02-22 16:20:52,185 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@1fd68ec 
+2013-02-22 16:20:52,185 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@1fd68ec 
+2013-02-22 16:20:52,187 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration serializable -> org.hibernate.type.SerializableType@1f93577 
+2013-02-22 16:20:52,187 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration serializable -> org.hibernate.type.SerializableType@1f93577 
+2013-02-22 16:20:52,192 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration object -> org.hibernate.type.ObjectType@7dec84 
+2013-02-22 16:20:52,192 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration object -> org.hibernate.type.ObjectType@7dec84 
+2013-02-22 16:20:52,193 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@7dec84 
+2013-02-22 16:20:52,193 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@7dec84 
+2013-02-22 16:20:52,194 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@1d9b85b 
+2013-02-22 16:20:52,194 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@1d9b85b 
+2013-02-22 16:20:52,194 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@d68337 
+2013-02-22 16:20:52,194 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@d68337 
+2013-02-22 16:20:52,194 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@140a3cc 
+2013-02-22 16:20:52,194 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@140a3cc 
+2013-02-22 16:20:52,195 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@c1cdb3 
+2013-02-22 16:20:52,195 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@c1cdb3 
+2013-02-22 16:20:52,195 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@1a7cb2a 
+2013-02-22 16:20:52,195 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@1a7cb2a 
+2013-02-22 16:20:52,195 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@10b3d81 
+2013-02-22 16:20:52,195 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@10b3d81 
+2013-02-22 16:20:52,195 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@f2fe6f 
+2013-02-22 16:20:52,195 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@f2fe6f 
+2013-02-22 16:20:52,196 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@11e5a1c 
+2013-02-22 16:20:52,196 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@11e5a1c 
+2013-02-22 16:20:52,233 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.1.Final} 
+2013-02-22 16:20:52,246 INFO  org.hibernate.Version - HHH000412: Hibernate Core {4.1.9.Final} 
+2013-02-22 16:20:52,257 INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found 
+2013-02-22 16:20:52,263 INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist 
+2013-02-22 16:20:52,303 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@1fcfd14 
+2013-02-22 16:20:52,303 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@1fcfd14 
+2013-02-22 16:20:52,305 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@1fcfd14 
+2013-02-22 16:20:52,305 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@1fcfd14 
+2013-02-22 16:20:52,306 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@1fcfd14 
+2013-02-22 16:20:52,306 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@1fcfd14 
+2013-02-22 16:20:52,306 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@195d79a 
+2013-02-22 16:20:52,306 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@195d79a 
+2013-02-22 16:20:52,307 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration true_false -> org.hibernate.type.TrueFalseType@b30577 
+2013-02-22 16:20:52,307 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration true_false -> org.hibernate.type.TrueFalseType@b30577 
+2013-02-22 16:20:52,308 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration yes_no -> org.hibernate.type.YesNoType@1c89f29 
+2013-02-22 16:20:52,308 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration yes_no -> org.hibernate.type.YesNoType@1c89f29 
+2013-02-22 16:20:52,309 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@573789 
+2013-02-22 16:20:52,309 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@573789 
+2013-02-22 16:20:52,309 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@573789 
+2013-02-22 16:20:52,309 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@573789 
+2013-02-22 16:20:52,310 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@573789 
+2013-02-22 16:20:52,310 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@573789 
+2013-02-22 16:20:52,310 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration character -> org.hibernate.type.CharacterType@1a7b5f8 
+2013-02-22 16:20:52,310 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration character -> org.hibernate.type.CharacterType@1a7b5f8 
+2013-02-22 16:20:52,311 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration char -> org.hibernate.type.CharacterType@1a7b5f8 
+2013-02-22 16:20:52,311 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration char -> org.hibernate.type.CharacterType@1a7b5f8 
+2013-02-22 16:20:52,311 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@1a7b5f8 
+2013-02-22 16:20:52,311 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@1a7b5f8 
+2013-02-22 16:20:52,312 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@1e630ca 
+2013-02-22 16:20:52,312 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@1e630ca 
+2013-02-22 16:20:52,313 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@1e630ca 
+2013-02-22 16:20:52,313 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@1e630ca 
+2013-02-22 16:20:52,313 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@1e630ca 
+2013-02-22 16:20:52,313 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@1e630ca 
+2013-02-22 16:20:52,321 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration integer -> org.hibernate.type.IntegerType@e56ccf 
+2013-02-22 16:20:52,321 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration integer -> org.hibernate.type.IntegerType@e56ccf 
+2013-02-22 16:20:52,322 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration int -> org.hibernate.type.IntegerType@e56ccf 
+2013-02-22 16:20:52,322 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration int -> org.hibernate.type.IntegerType@e56ccf 
+2013-02-22 16:20:52,322 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@e56ccf 
+2013-02-22 16:20:52,322 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@e56ccf 
+2013-02-22 16:20:52,323 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@19df2e 
+2013-02-22 16:20:52,323 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@19df2e 
+2013-02-22 16:20:52,323 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@19df2e 
+2013-02-22 16:20:52,323 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@19df2e 
+2013-02-22 16:20:52,324 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Long -> org.hibernate.type.LongType@19df2e 
+2013-02-22 16:20:52,324 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Long -> org.hibernate.type.LongType@19df2e 
+2013-02-22 16:20:52,325 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@1cfba42 
+2013-02-22 16:20:52,325 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@1cfba42 
+2013-02-22 16:20:52,325 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@1cfba42 
+2013-02-22 16:20:52,325 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@1cfba42 
+2013-02-22 16:20:52,326 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@1cfba42 
+2013-02-22 16:20:52,326 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@1cfba42 
+2013-02-22 16:20:52,326 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@1a58e00 
+2013-02-22 16:20:52,326 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@1a58e00 
+2013-02-22 16:20:52,327 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@1a58e00 
+2013-02-22 16:20:52,327 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@1a58e00 
+2013-02-22 16:20:52,328 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@1a58e00 
+2013-02-22 16:20:52,328 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@1a58e00 
+2013-02-22 16:20:52,328 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@8bdc9 
+2013-02-22 16:20:52,328 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@8bdc9 
+2013-02-22 16:20:52,329 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@8bdc9 
+2013-02-22 16:20:52,329 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@8bdc9 
+2013-02-22 16:20:52,330 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@126b724 
+2013-02-22 16:20:52,330 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@126b724 
+2013-02-22 16:20:52,336 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@126b724 
+2013-02-22 16:20:52,336 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@126b724 
+2013-02-22 16:20:52,336 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration string -> org.hibernate.type.StringType@15d0123 
+2013-02-22 16:20:52,336 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration string -> org.hibernate.type.StringType@15d0123 
+2013-02-22 16:20:52,336 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.String -> org.hibernate.type.StringType@15d0123 
+2013-02-22 16:20:52,336 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.String -> org.hibernate.type.StringType@15d0123 
+2013-02-22 16:20:52,337 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration url -> org.hibernate.type.UrlType@16bc6a7 
+2013-02-22 16:20:52,337 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration url -> org.hibernate.type.UrlType@16bc6a7 
+2013-02-22 16:20:52,337 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.net.URL -> org.hibernate.type.UrlType@16bc6a7 
+2013-02-22 16:20:52,337 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.net.URL -> org.hibernate.type.UrlType@16bc6a7 
+2013-02-22 16:20:52,338 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration date -> org.hibernate.type.DateType@1df04b 
+2013-02-22 16:20:52,338 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration date -> org.hibernate.type.DateType@1df04b 
+2013-02-22 16:20:52,338 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Date -> org.hibernate.type.DateType@1df04b 
+2013-02-22 16:20:52,338 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Date -> org.hibernate.type.DateType@1df04b 
+2013-02-22 16:20:52,338 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration time -> org.hibernate.type.TimeType@747708 
+2013-02-22 16:20:52,338 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration time -> org.hibernate.type.TimeType@747708 
+2013-02-22 16:20:52,339 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@747708 
+2013-02-22 16:20:52,339 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@747708 
+2013-02-22 16:20:52,339 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration timestamp -> org.hibernate.type.TimestampType@8503ce 
+2013-02-22 16:20:52,339 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration timestamp -> org.hibernate.type.TimestampType@8503ce 
+2013-02-22 16:20:52,339 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@8503ce 
+2013-02-22 16:20:52,339 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@8503ce 
+2013-02-22 16:20:52,340 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@8503ce 
+2013-02-22 16:20:52,340 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@8503ce 
+2013-02-22 16:20:52,341 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@fd2b91 
+2013-02-22 16:20:52,341 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@fd2b91 
+2013-02-22 16:20:52,341 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration calendar -> org.hibernate.type.CalendarType@54cf52 
+2013-02-22 16:20:52,341 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration calendar -> org.hibernate.type.CalendarType@54cf52 
+2013-02-22 16:20:52,342 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@54cf52 
+2013-02-22 16:20:52,342 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@54cf52 
+2013-02-22 16:20:52,342 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@54cf52 
+2013-02-22 16:20:52,342 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@54cf52 
+2013-02-22 16:20:52,342 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@18b070c 
+2013-02-22 16:20:52,342 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@18b070c 
+2013-02-22 16:20:52,343 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration locale -> org.hibernate.type.LocaleType@1200a63 
+2013-02-22 16:20:52,343 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration locale -> org.hibernate.type.LocaleType@1200a63 
+2013-02-22 16:20:52,343 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@1200a63 
+2013-02-22 16:20:52,343 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@1200a63 
+2013-02-22 16:20:52,343 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration currency -> org.hibernate.type.CurrencyType@8e1d84 
+2013-02-22 16:20:52,343 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration currency -> org.hibernate.type.CurrencyType@8e1d84 
+2013-02-22 16:20:52,343 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@8e1d84 
+2013-02-22 16:20:52,343 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@8e1d84 
+2013-02-22 16:20:52,344 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration timezone -> org.hibernate.type.TimeZoneType@1ce21dc 
+2013-02-22 16:20:52,344 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration timezone -> org.hibernate.type.TimeZoneType@1ce21dc 
+2013-02-22 16:20:52,344 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@1ce21dc 
+2013-02-22 16:20:52,344 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@1ce21dc 
+2013-02-22 16:20:52,345 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration class -> org.hibernate.type.ClassType@4df262 
+2013-02-22 16:20:52,345 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration class -> org.hibernate.type.ClassType@4df262 
+2013-02-22 16:20:52,345 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@4df262 
+2013-02-22 16:20:52,345 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@4df262 
+2013-02-22 16:20:52,345 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@49e681 
+2013-02-22 16:20:52,345 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@49e681 
+2013-02-22 16:20:52,346 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@49e681 
+2013-02-22 16:20:52,346 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@49e681 
+2013-02-22 16:20:52,346 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@69e7e7 
+2013-02-22 16:20:52,346 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@69e7e7 
+2013-02-22 16:20:52,346 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration pg-uuid -> org.hibernate.type.PostgresUUIDType@1c41091 
+2013-02-22 16:20:52,346 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration pg-uuid -> org.hibernate.type.PostgresUUIDType@1c41091 
+2013-02-22 16:20:52,347 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration binary -> org.hibernate.type.BinaryType@123b987 
+2013-02-22 16:20:52,347 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration binary -> org.hibernate.type.BinaryType@123b987 
+2013-02-22 16:20:52,349 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration byte[] -> org.hibernate.type.BinaryType@123b987 
+2013-02-22 16:20:52,349 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration byte[] -> org.hibernate.type.BinaryType@123b987 
+2013-02-22 16:20:52,349 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration [B -> org.hibernate.type.BinaryType@123b987 
+2013-02-22 16:20:52,349 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration [B -> org.hibernate.type.BinaryType@123b987 
+2013-02-22 16:20:52,349 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@798f1e 
+2013-02-22 16:20:52,349 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@798f1e 
+2013-02-22 16:20:52,349 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@798f1e 
+2013-02-22 16:20:52,349 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@798f1e 
+2013-02-22 16:20:52,350 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@798f1e 
+2013-02-22 16:20:52,350 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@798f1e 
+2013-02-22 16:20:52,350 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration image -> org.hibernate.type.ImageType@1b7f440 
+2013-02-22 16:20:52,350 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration image -> org.hibernate.type.ImageType@1b7f440 
+2013-02-22 16:20:52,350 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration characters -> org.hibernate.type.CharArrayType@119830d 
+2013-02-22 16:20:52,350 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration characters -> org.hibernate.type.CharArrayType@119830d 
+2013-02-22 16:20:52,351 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration char[] -> org.hibernate.type.CharArrayType@119830d 
+2013-02-22 16:20:52,351 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration char[] -> org.hibernate.type.CharArrayType@119830d 
+2013-02-22 16:20:52,351 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration [C -> org.hibernate.type.CharArrayType@119830d 
+2013-02-22 16:20:52,351 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration [C -> org.hibernate.type.CharArrayType@119830d 
+2013-02-22 16:20:52,351 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@766465 
+2013-02-22 16:20:52,351 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@766465 
+2013-02-22 16:20:52,352 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@766465 
+2013-02-22 16:20:52,352 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@766465 
+2013-02-22 16:20:52,352 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@766465 
+2013-02-22 16:20:52,352 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@766465 
+2013-02-22 16:20:52,352 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration text -> org.hibernate.type.TextType@19a3dd1 
+2013-02-22 16:20:52,352 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration text -> org.hibernate.type.TextType@19a3dd1 
+2013-02-22 16:20:52,374 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration blob -> org.hibernate.type.BlobType@88052c 
+2013-02-22 16:20:52,374 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration blob -> org.hibernate.type.BlobType@88052c 
+2013-02-22 16:20:52,378 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@88052c 
+2013-02-22 16:20:52,378 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@88052c 
+2013-02-22 16:20:52,381 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@d58325 
+2013-02-22 16:20:52,381 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@d58325 
+2013-02-22 16:20:52,383 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration clob -> org.hibernate.type.ClobType@efeb2e 
+2013-02-22 16:20:52,383 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration clob -> org.hibernate.type.ClobType@efeb2e 
+2013-02-22 16:20:52,386 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@efeb2e 
+2013-02-22 16:20:52,386 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@efeb2e 
+2013-02-22 16:20:52,387 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@1fd68ec 
+2013-02-22 16:20:52,387 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@1fd68ec 
+2013-02-22 16:20:52,387 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration serializable -> org.hibernate.type.SerializableType@1f93577 
+2013-02-22 16:20:52,387 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration serializable -> org.hibernate.type.SerializableType@1f93577 
+2013-02-22 16:20:52,388 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration object -> org.hibernate.type.ObjectType@7dec84 
+2013-02-22 16:20:52,388 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration object -> org.hibernate.type.ObjectType@7dec84 
+2013-02-22 16:20:52,388 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@7dec84 
+2013-02-22 16:20:52,388 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@7dec84 
+2013-02-22 16:20:52,389 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@bf626b 
+2013-02-22 16:20:52,389 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@bf626b 
+2013-02-22 16:20:52,389 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@d69279 
+2013-02-22 16:20:52,389 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@d69279 
+2013-02-22 16:20:52,389 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@12a6f65 
+2013-02-22 16:20:52,389 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@12a6f65 
+2013-02-22 16:20:52,390 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@f76c2e 
+2013-02-22 16:20:52,390 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@f76c2e 
+2013-02-22 16:20:52,390 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@1df625b 
+2013-02-22 16:20:52,390 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@1df625b 
+2013-02-22 16:20:52,391 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@b24552 
+2013-02-22 16:20:52,391 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@b24552 
+2013-02-22 16:20:52,391 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@1e5444b 
+2013-02-22 16:20:52,391 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@1e5444b 
+2013-02-22 16:20:52,391 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@e6bccd 
+2013-02-22 16:20:52,391 DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@e6bccd 
+2013-02-22 16:20:52,392 INFO  org.hibernate.ejb.Ejb3Configuration - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...] 
+2013-02-22 16:20:52,980 INFO  o.h.s.j.c.i.ConnectionProviderInitiator - HHH000130: Instantiating explicit connection provider: org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider 
+2013-02-22 16:20:53,446 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect 
+2013-02-22 16:20:53,487 INFO  o.h.e.t.i.TransactionFactoryInitiator - HHH000268: Transaction strategy: org.hibernate.engine.transaction.internal.jdbc.JdbcTransactionFactory 
+2013-02-22 16:20:53,494 INFO  o.h.h.i.a.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory 
+2013-02-22 16:20:53,525 TRACE org.hibernate.type.TypeFactory - Scoping types to session factory org.hibernate.internal.SessionFactoryImpl@11803bd 
+2013-02-22 16:20:53,525 TRACE org.hibernate.type.TypeFactory - Scoping types to session factory org.hibernate.internal.SessionFactoryImpl@11803bd 
+2013-02-22 16:20:53,581 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 4.3.1.Final 
+2013-02-22 16:20:54,138 INFO  o.s.w.c.s.XmlWebApplicationContext - Bean 'entityManagerFactory' of type [class org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2013-02-22 16:20:54,204 INFO  o.s.w.c.s.XmlWebApplicationContext - Bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0' of type [class org.springframework.transaction.annotation.AnnotationTransactionAttributeSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2013-02-22 16:20:54,234 INFO  o.s.w.c.s.XmlWebApplicationContext - Bean 'net.bull.javamelody.MonitoredWithAnnotationPointcut#19740c7' of type [class net.bull.javamelody.MonitoredWithAnnotationPointcut] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2013-02-22 16:20:54,242 INFO  o.s.w.c.s.XmlWebApplicationContext - Bean 'net.bull.javamelody.MonitoredWithInterfacePointcut#da818a' of type [class net.bull.javamelody.MonitoredWithInterfacePointcut] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2013-02-22 16:20:54,243 INFO  o.s.w.c.s.XmlWebApplicationContext - Bean 'facadeMonitoringAdvisor' of type [class net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2013-02-22 16:20:54,244 INFO  o.s.w.c.s.XmlWebApplicationContext - Bean 'monitoringAdvisor' of type [class net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2013-02-22 16:20:54,247 INFO  o.s.w.c.s.XmlWebApplicationContext - Bean 'org.springframework.transaction.config.internalTransactionAdvisor' of type [class org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2013-02-22 16:20:54,297 INFO  o.s.b.f.s.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1027c27: defining beans [monitoringAdvisor,org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator#0,springDataSourceBeanPostProcessor,belajarRestfulService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,roleDao,menuDao,schoolDao,permissionDao,applicationConfigDao,userDao,teacherDao,org.springframework.data.repository.core.support.RepositoryInterfaceAwareBeanPostProcessor#0,org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor#0,org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor#0,facadeMonitoringAdvisor,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,dataSource,transactionManager,entityManagerFactory,sessionFactory,hibernateStatisticsMBean,mbeanExporter,mbeanServer,messageSource,org.springframework.security.config.debug.SecurityDebugBeanFactoryPostProcessor#0,org.springframework.security.filterChains,org.springframework.security.filterChainProxy,org.springframework.security.web.DefaultSecurityFilterChain#0,org.springframework.security.web.DefaultSecurityFilterChain#1,org.springframework.security.web.PortMapperImpl#0,org.springframework.security.web.PortResolverImpl#0,org.springframework.security.config.authentication.AuthenticationManagerFactoryBean#0,org.springframework.security.authentication.ProviderManager#0,org.springframework.security.web.context.HttpSessionSecurityContextRepository#0,org.springframework.security.core.session.SessionRegistryImpl#0,org.springframework.security.web.authentication.session.ConcurrentSessionControlStrategy#0,org.springframework.security.web.savedrequest.HttpSessionRequestCache#0,org.springframework.security.access.vote.AffirmativeBased#0,org.springframework.security.web.access.intercept.FilterSecurityInterceptor#0,org.springframework.security.web.access.DefaultWebInvocationPrivilegeEvaluator#0,org.springframework.security.authentication.AnonymousAuthenticationProvider#0,org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter#0,org.springframework.security.userDetailsServiceFactory,org.springframework.security.web.DefaultSecurityFilterChain#2,restAuthenticationEntryPoint,org.springframework.security.provisioning.InMemoryUserDetailsManager#0,org.springframework.security.authentication.dao.DaoAuthenticationProvider#0,org.springframework.security.authentication.dao.DaoAuthenticationProvider#1,org.springframework.security.authentication.DefaultAuthenticationEventPublisher#0,org.springframework.security.authenticationManager,myUserDetailsService,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,springSecurityFilterChain]; root of factory hierarchy 
+2013-02-22 16:20:55,182 INFO  o.s.jmx.export.MBeanExporter - Registering beans for JMX exposure on startup 
+2013-02-22 16:20:55,185 INFO  o.s.jmx.export.MBeanExporter - Located MBean 'SpringBeans:name=hibernateStatisticsMBean': registering with JMX server as MBean [SpringBeans:name=hibernateStatisticsMBean] 
+2013-02-22 16:20:55,212 INFO  o.s.s.w.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/css/**'], [] 
+2013-02-22 16:20:55,220 INFO  o.s.s.w.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/js/**'], [] 
+2013-02-22 16:20:55,871 INFO  o.s.s.w.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.AnyRequestMatcher@1, [org.springframework.security.web.context.SecurityContextPersistenceFilter@5b4055, org.springframework.security.web.session.ConcurrentSessionFilter@dcc1f9, org.springframework.security.web.authentication.logout.LogoutFilter@142e2ad, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2fd3ae, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1f27e0c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@13170e2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@ea3120, org.springframework.security.web.session.SessionManagementFilter@13f3cc1, org.springframework.security.web.access.ExceptionTranslationFilter@addbf6, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@44043c] 
+2013-02-22 16:20:55,994 INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 5159 ms 
+2013-02-22 16:20:57,174 INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'Spring MVC Dispatcher Servlet': initialization started 
+2013-02-22 16:20:57,191 INFO  o.s.w.c.s.XmlWebApplicationContext - Refreshing WebApplicationContext for namespace 'Spring MVC Dispatcher Servlet-servlet': startup date [Fri Feb 22 16:20:57 WIT 2013]; parent: Root WebApplicationContext 
+2013-02-22 16:20:57,203 INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from ServletContext resource [/WEB-INF/springmvc-context.xml] 
+2013-02-22 16:20:57,521 INFO  o.s.b.f.s.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@44b1a: defining beans [permissionController,userController,schoolController,teacherController,applicationConfigController,roleController,menuController,homepageController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,mvcContentNegotiationManager,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.validation.beanvalidation.LocalValidatorFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,multipartResolver,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@1027c27 
+2013-02-22 16:20:57,859 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/permission/{id}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.artivisi.school.administration.domain.Permission com.artivisi.school.administration.ui.controller.PermissionController.findById(java.lang.String) 
+2013-02-22 16:20:57,860 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/permission],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.List<com.artivisi.school.administration.domain.Permission> com.artivisi.school.administration.ui.controller.PermissionController.findAll(org.springframework.data.domain.Pageable,javax.servlet.http.HttpServletResponse) 
+2013-02-22 16:20:57,860 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/permission/{id}],methods=[PUT],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void com.artivisi.school.administration.ui.controller.PermissionController.update(java.lang.String,com.artivisi.school.administration.domain.Permission) 
+2013-02-22 16:20:57,861 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/permission],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void com.artivisi.school.administration.ui.controller.PermissionController.create(com.artivisi.school.administration.domain.Permission,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+2013-02-22 16:20:57,861 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/permission/{id}],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void com.artivisi.school.administration.ui.controller.PermissionController.delete(java.lang.String) 
+2013-02-22 16:20:57,863 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/{id}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.artivisi.school.administration.domain.User com.artivisi.school.administration.ui.controller.UserController.findById(java.lang.String) 
+2013-02-22 16:20:57,864 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.List<com.artivisi.school.administration.domain.User> com.artivisi.school.administration.ui.controller.UserController.findAll(org.springframework.data.domain.Pageable,javax.servlet.http.HttpServletResponse) 
+2013-02-22 16:20:57,864 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/{id}],methods=[PUT],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void com.artivisi.school.administration.ui.controller.UserController.update(java.lang.String,com.artivisi.school.administration.domain.User) 
+2013-02-22 16:20:57,865 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void com.artivisi.school.administration.ui.controller.UserController.create(com.artivisi.school.administration.domain.User,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+2013-02-22 16:20:57,865 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/{id}],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void com.artivisi.school.administration.ui.controller.UserController.delete(java.lang.String) 
+2013-02-22 16:20:57,881 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/master/school/{id}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.artivisi.school.administration.domain.School com.artivisi.school.administration.ui.controller.SchoolController.findById(java.lang.String) 
+2013-02-22 16:20:57,893 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/master/school],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.data.domain.Page<com.artivisi.school.administration.domain.School> com.artivisi.school.administration.ui.controller.SchoolController.findTeacher(org.springframework.data.domain.Pageable) 
+2013-02-22 16:20:57,900 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/master/school/{id}],methods=[PUT],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void com.artivisi.school.administration.ui.controller.SchoolController.update(java.lang.String,com.artivisi.school.administration.domain.School) 
+2013-02-22 16:20:57,901 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/master/school],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void com.artivisi.school.administration.ui.controller.SchoolController.save(com.artivisi.school.administration.domain.School,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+2013-02-22 16:20:57,902 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/master/school/{id}],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void com.artivisi.school.administration.ui.controller.SchoolController.delete(java.lang.String) 
+2013-02-22 16:20:57,903 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/teacher/{id}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.artivisi.school.administration.domain.Teacher com.artivisi.school.administration.ui.controller.TeacherController.findTeacherById(java.lang.String) 
+2013-02-22 16:20:57,907 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/teacher],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.List<com.artivisi.school.administration.domain.Teacher> com.artivisi.school.administration.ui.controller.TeacherController.findAll(org.springframework.data.domain.Pageable,javax.servlet.http.HttpServletResponse) 
+2013-02-22 16:20:57,908 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/teacher/{id}],methods=[PUT],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void com.artivisi.school.administration.ui.controller.TeacherController.update(java.lang.String,com.artivisi.school.administration.domain.Teacher) 
+2013-02-22 16:20:57,910 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/teacher],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void com.artivisi.school.administration.ui.controller.TeacherController.create(com.artivisi.school.administration.domain.Teacher,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+2013-02-22 16:20:57,912 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/teacher/{id}],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void com.artivisi.school.administration.ui.controller.TeacherController.delete(java.lang.String) 
+2013-02-22 16:20:57,916 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/config/{id}/files],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.String> com.artivisi.school.administration.ui.controller.ApplicationConfigController.uploadFiles(java.lang.String,java.lang.String,org.springframework.web.multipart.MultipartFile,org.springframework.web.multipart.MultipartFile) throws java.lang.Exception 
+2013-02-22 16:20:57,917 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/config/upload],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.List<java.util.Map<java.lang.String, java.lang.String>> com.artivisi.school.administration.ui.controller.ApplicationConfigController.testUpload(java.util.List<org.springframework.web.multipart.MultipartFile>) throws java.lang.Exception 
+2013-02-22 16:20:57,919 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/config/{id}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.artivisi.school.administration.domain.ApplicationConfig com.artivisi.school.administration.ui.controller.ApplicationConfigController.findApplicationConfigById(java.lang.String) 
+2013-02-22 16:20:57,920 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/config],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.List<com.artivisi.school.administration.domain.ApplicationConfig> com.artivisi.school.administration.ui.controller.ApplicationConfigController.findAll(java.lang.String,org.springframework.data.domain.Pageable,javax.servlet.http.HttpServletResponse) 
+2013-02-22 16:20:57,920 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/config/{id}],methods=[PUT],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void com.artivisi.school.administration.ui.controller.ApplicationConfigController.update(java.lang.String,com.artivisi.school.administration.domain.ApplicationConfig) 
+2013-02-22 16:20:57,922 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/config],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void com.artivisi.school.administration.ui.controller.ApplicationConfigController.create(com.artivisi.school.administration.domain.ApplicationConfig,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+2013-02-22 16:20:57,922 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/config/{id}],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void com.artivisi.school.administration.ui.controller.ApplicationConfigController.delete(java.lang.String) 
+2013-02-22 16:20:57,934 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/role/{id}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.artivisi.school.administration.domain.Role com.artivisi.school.administration.ui.controller.RoleController.findById(java.lang.String) 
+2013-02-22 16:20:57,938 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/role/{id}/unselected-permission],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.List<com.artivisi.school.administration.domain.Permission> com.artivisi.school.administration.ui.controller.RoleController.findPermissionNotInRole(java.lang.String) 
+2013-02-22 16:20:57,943 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/role/{id}/unselected-menu],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.List<com.artivisi.school.administration.domain.Menu> com.artivisi.school.administration.ui.controller.RoleController.findMenuNotInRole(java.lang.String) 
+2013-02-22 16:20:57,948 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/role],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.List<com.artivisi.school.administration.domain.Role> com.artivisi.school.administration.ui.controller.RoleController.findAll(org.springframework.data.domain.Pageable,javax.servlet.http.HttpServletResponse) 
+2013-02-22 16:20:57,949 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/role/{id}],methods=[PUT],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void com.artivisi.school.administration.ui.controller.RoleController.update(java.lang.String,com.artivisi.school.administration.domain.Role) 
+2013-02-22 16:20:57,952 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/role],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void com.artivisi.school.administration.ui.controller.RoleController.create(com.artivisi.school.administration.domain.Role,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+2013-02-22 16:20:57,952 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/role/{id}],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void com.artivisi.school.administration.ui.controller.RoleController.delete(java.lang.String) 
+2013-02-22 16:20:57,966 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/menu/{id}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.artivisi.school.administration.domain.Menu com.artivisi.school.administration.ui.controller.MenuController.findById(java.lang.String) 
+2013-02-22 16:20:57,967 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/menu],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.data.domain.Page<com.artivisi.school.administration.domain.Menu> com.artivisi.school.administration.ui.controller.MenuController.findAll(org.springframework.data.domain.Pageable) 
+2013-02-22 16:20:57,967 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/menu/{id}],methods=[PUT],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void com.artivisi.school.administration.ui.controller.MenuController.update(java.lang.String,com.artivisi.school.administration.domain.Menu) 
+2013-02-22 16:20:57,968 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/menu],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void com.artivisi.school.administration.ui.controller.MenuController.create(com.artivisi.school.administration.domain.Menu,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+2013-02-22 16:20:57,968 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/menu/{id}],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void com.artivisi.school.administration.ui.controller.MenuController.delete(java.lang.String) 
+2013-02-22 16:20:57,970 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/homepage/appinfo],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.String> com.artivisi.school.administration.ui.controller.HomepageController.appInfo(javax.servlet.http.HttpServletRequest) 
+2013-02-22 16:20:57,971 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/homepage/sessioninfo],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.List<java.util.Map<java.lang.String, java.lang.String>> com.artivisi.school.administration.ui.controller.HomepageController.sessionInfo() 
+2013-02-22 16:20:57,975 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/homepage/kick/{sessionid}],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void com.artivisi.school.administration.ui.controller.HomepageController.forceLogout(java.lang.String) 
+2013-02-22 16:20:57,975 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/homepage/userinfo],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.String> com.artivisi.school.administration.ui.controller.HomepageController.userInfo() 
+2013-02-22 16:20:58,591 INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0' 
+2013-02-22 16:20:58,753 INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'Spring MVC Dispatcher Servlet': initialization completed in 1577 ms 
+2013-02-22 16:21:00,299 INFO  o.s.w.c.s.XmlWebApplicationContext - Closing WebApplicationContext for namespace 'Spring MVC Dispatcher Servlet-servlet': startup date [Fri Feb 22 16:20:57 WIT 2013]; parent: Root WebApplicationContext 
+2013-02-22 16:21:00,302 INFO  o.s.b.f.s.DefaultListableBeanFactory - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@44b1a: defining beans [permissionController,userController,schoolController,teacherController,applicationConfigController,roleController,menuController,homepageController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,mvcContentNegotiationManager,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.validation.beanvalidation.LocalValidatorFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,multipartResolver,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@1027c27 
+2013-02-22 16:21:00,311 INFO  o.s.w.c.s.XmlWebApplicationContext - Closing Root WebApplicationContext: startup date [Fri Feb 22 16:20:50 WIT 2013]; root of context hierarchy 
+2013-02-22 16:21:00,312 INFO  o.s.b.f.s.DefaultListableBeanFactory - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1027c27: defining beans [monitoringAdvisor,org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator#0,springDataSourceBeanPostProcessor,belajarRestfulService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,roleDao,menuDao,schoolDao,permissionDao,applicationConfigDao,userDao,teacherDao,org.springframework.data.repository.core.support.RepositoryInterfaceAwareBeanPostProcessor#0,org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor#0,org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor#0,facadeMonitoringAdvisor,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,dataSource,transactionManager,entityManagerFactory,sessionFactory,hibernateStatisticsMBean,mbeanExporter,mbeanServer,messageSource,org.springframework.security.config.debug.SecurityDebugBeanFactoryPostProcessor#0,org.springframework.security.filterChains,org.springframework.security.filterChainProxy,org.springframework.security.web.DefaultSecurityFilterChain#0,org.springframework.security.web.DefaultSecurityFilterChain#1,org.springframework.security.web.PortMapperImpl#0,org.springframework.security.web.PortResolverImpl#0,org.springframework.security.config.authentication.AuthenticationManagerFactoryBean#0,org.springframework.security.authentication.ProviderManager#0,org.springframework.security.web.context.HttpSessionSecurityContextRepository#0,org.springframework.security.core.session.SessionRegistryImpl#0,org.springframework.security.web.authentication.session.ConcurrentSessionControlStrategy#0,org.springframework.security.web.savedrequest.HttpSessionRequestCache#0,org.springframework.security.access.vote.AffirmativeBased#0,org.springframework.security.web.access.intercept.FilterSecurityInterceptor#0,org.springframework.security.web.access.DefaultWebInvocationPrivilegeEvaluator#0,org.springframework.security.authentication.AnonymousAuthenticationProvider#0,org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter#0,org.springframework.security.userDetailsServiceFactory,org.springframework.security.web.DefaultSecurityFilterChain#2,restAuthenticationEntryPoint,org.springframework.security.provisioning.InMemoryUserDetailsManager#0,org.springframework.security.authentication.dao.DaoAuthenticationProvider#0,org.springframework.security.authentication.dao.DaoAuthenticationProvider#1,org.springframework.security.authentication.DefaultAuthenticationEventPublisher#0,org.springframework.security.authenticationManager,myUserDetailsService,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,springSecurityFilterChain]; root of factory hierarchy 
+2013-02-22 16:21:00,321 INFO  o.s.jmx.export.MBeanExporter - Unregistering JMX-exposed beans on shutdown 
+2013-02-22 16:21:00,324 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default' 

@@ -1,0 +1,53 @@
+<div class="container">
+<div class="span11 well-large">
+	<h1 id="header">Report Competency</h1><br />
+	<form class="form-horizontal" name="formEdit">
+  <fieldset>
+		<div class="control-group" ng-class="{error: formEdit.lesson.$invalid}">
+					<label class="control-label size" for="lesson">Search by Lesson : &nbsp;</label>
+					<div class="input-append">
+					<input type="text" id="lesson" name="lesson" placeholder="Lesson" ng-model="currentPermission.value"required
+ui-validate="{permissionValueAvailable: isPermissionValueAvailable}">
+            <span ng-show="formEdit.lesson.$error.permissionValueAvailable" class="help-inline">Data not Found</span>
+			<button class="btn btn-primary" type="button"><i class="icon-search"></i></button>
+</div>
+        </div>
+    <h3 id="header">Competency Report</h3><br />
+        	<form class="form-horizontal" name="formEdit">
+        <fieldset>
+		<div class="control-group" ng-class="{error: formEdit.comp_id.$invalid}">
+			<label class="control-label size" for="comp_id">Search by ID : &nbsp;</label>
+			<div class="input-append">
+			<input type="text" id="comp_id" name="comp_id" placeholder="ID" ng-model="currentComp.value"required
+                        ui-validate="{compValueAvailable: isCompValueAvailable}">
+                            <span ng-show="formEdit.id.$error.lessonValueAvailable" class="help-inline">Data not Found</span>
+			<button class="btn btn-primary" type="button"><i class="icon-search"></i></button>
+</div>
+                </div>
+  </fieldset>
+</form>      
+        <table class="table table-striped table-condensed table-bordered">
+            <thead>
+                <tr>
+                    <th>Competency ID</th>
+                    <th>Lesson</th>
+                    <th>KKM</th>
+                    <th>Name</th>
+                    <th></th>
+                </tr>
+            </thead>
+        <tbody>
+            <tr ng-repeat="x in comp">
+                <td>{{x.comp_id}}</td>
+                <td>{{x.lesson}}</td>
+                <td>{{x.kkm}}</td>
+                <td>{{x.name}}</td>
+                <td>
+                    <a ng-click="edit(x)"><i class="icon-edit"></i></a>
+                    <a ng-click="remove(x)"><i class="icon-remove"></i></a>
+                </td>
+            </tr>
+        </tbody>
+        </table>
+    </div>
+</div>
